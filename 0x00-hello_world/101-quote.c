@@ -4,7 +4,7 @@
 /**
 * main - A c program that prints a line to the standard error
 *
-* Return 0 (Success)
+* Return: 0(Success)
 */
 
 int main(void)
