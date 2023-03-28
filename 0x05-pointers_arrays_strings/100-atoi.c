@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
  * _atoi - converts a string to an integer
  *  @s: string to be converted
  *
  *  Return: the int converted from the string
  */
-inti _atoi(char *s)
+int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
 
@@ -29,8 +30,8 @@ inti _atoi(char *s)
 			if (d % 2)
 				digit = -digit;
 			n = n * 10 + digit;
-			f = l;
-			if (s[i + l] < '0' || s[i + l] > '9')
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
 			f = 0;
 		}
